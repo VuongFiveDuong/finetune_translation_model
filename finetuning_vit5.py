@@ -5,7 +5,13 @@ from datasets import DatasetDict, Dataset, load_dataset
 import torch
 import logging
 import sys
-
+import argparse
+ 
+parser = argparse.ArgumentParser(description="What to do with this file?",
+                                 formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+parser.add_argument("-f", "--finetune", default=True,
+                    help="Finetune or train from scratch")
+args = parser.parse_args()
 
 # Setup logging
 logging.basicConfig(
@@ -19,14 +25,17 @@ logger = logging.getLogger(__name__)
 
 # DATA PREPROCESSING
 dataset = load_dataset("vtd/EVMed")
-tokenizer = AutoTokenizer.from_pretrained("./models/tokenizer_vit5", src_lang = "en_XX", tgt_lang = "vi_VN")
+tokenizer = AutoTokenizer.from_pretrained("./models/tokenizer_vit5_en2vi", src_lang = "en_XX", tgt_lang = "vi_VN")  # CHANGE HERE
+
+src_lang = "en"  # CHANGE HERE
+tgt_lang = "vi"  # CHANGE HERE
 
 prefix = ""
 max_length = 512
 
 def preprocess_function(examples):
-    inputs = [prefix + "en: " + example["en"] for example in examples["translation"]]
-    targets = ["vi: " + example["vi"] for example in examples["translation"]]
+    inputs = [prefix + src_lang + ": " + example[src_lang] for example in examples["translation"]]
+    targets = [tgt_lang + ": " + example[tgt_lang] for example in examples["translation"]]
     model_inputs = tokenizer(inputs, text_target=targets, max_length=max_length, truncation=True)
     return model_inputs
 
@@ -53,18 +62,19 @@ test_dataset = test_dataset.map(
 
 
 # # MODEL PREPARATION 
-
-# model = AutoModelForSeq2SeqLM.from_pretrained("VietAI/envit5-translation", max_length=max_length)
-
-# If train new model from scratch
 from transformers import AutoConfig
 
 
-config = AutoConfig.from_pretrained("VietAI/envit5-translation", max_length=max_length)
-model = AutoModelForSeq2SeqLM.from_config(config)
+if args.finetune:
+    model = AutoModelForSeq2SeqLM.from_pretrained("VietAI/envit5-translation", max_length=max_length)  # Change to checkpoint if resume from checkpoint
+
+# If train new model from scratch
+else:
+    config = AutoConfig.from_pretrained("VietAI/envit5-translation", max_length=max_length)
+    model = AutoModelForSeq2SeqLM.from_config(config)
 
 data_collator = DataCollatorForSeq2Seq(tokenizer=tokenizer, 
-                                       model=model)
+                                    model=model)
 
 # Metric
 import evaluate
@@ -104,7 +114,7 @@ from transformers import Seq2SeqTrainingArguments, Seq2SeqTrainer
 
 
 training_args = Seq2SeqTrainingArguments(
-    output_dir="./result_vit5_test",
+    output_dir="./result_vit5_en2vi",
     evaluation_strategy="steps",
     eval_steps=10,
     learning_rate=2e-5,
@@ -144,21 +154,21 @@ trainer.save_metrics("train", metrics)
 trainer.save_state()
 exit(0)
 
-# logger.info("*** Predict ***")
+logger.info("*** Predict ***")
 
-# predict_results = trainer.predict(
-#     test_dataset, metric_key_prefix="predict"
-# )
-# predictions = predict_results.predictions
-# predictions = np.where(predictions != -100, predictions, tokenizer.pad_token_id)
-# predictions = tokenizer.batch_decode(
-#     predictions, skip_special_tokens=True, clean_up_tokenization_spaces=True
-# )
-# predictions = [pred.strip() for pred in predictions]
-# print(predictions)
-# print([ex['vi'] for ex in test_dataset["translation"]])
-# print([ex['en'] for ex in test_dataset["translation"]])
-# exit(0)
+predict_results = trainer.predict(
+    test_dataset, metric_key_prefix="predict"
+)
+predictions = predict_results.predictions
+predictions = np.where(predictions != -100, predictions, tokenizer.pad_token_id)
+predictions = tokenizer.batch_decode(
+    predictions, skip_special_tokens=True, clean_up_tokenization_spaces=True
+)
+predictions = [pred.strip() for pred in predictions]
+print(predictions)
+print([ex[src_lang] for ex in test_dataset["translation"]])
+print([ex[tgt_lang] for ex in test_dataset["translation"]])
+exit(0)
 
 
 

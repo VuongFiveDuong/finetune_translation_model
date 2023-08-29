@@ -13,9 +13,6 @@ parser.add_argument("-f", "--finetune", default=True,
                     help="Finetune or train from scratch")
 args = parser.parse_args()
 
-
-
-
 # Setup logging
 logging.basicConfig(
   level = logging.INFO,
@@ -28,17 +25,19 @@ logger = logging.getLogger(__name__)
 
 # Change name in line 
 
-
 # DATA PREPROCESSING
 dataset = load_dataset("vtd/EVMed")
-tokenizer = AutoTokenizer.from_pretrained("./models/tokenizer_vinai", src_lang = "en_XX", tgt_lang = "vi_VN")
+tokenizer = AutoTokenizer.from_pretrained("./models/tokenizer_vinai_en2vi", src_lang = "en_XX", tgt_lang = "vi_VN")  # CHANGE HERE
+
+src_lang = "en"  # CHANGE HERE
+tgt_lang = "vi"  # CHANGE HERE
 
 prefix = ""
 max_length = 512
 
 def preprocess_function(examples):
-    inputs = [prefix + example["en"] for example in examples["translation"]]
-    targets = [example["vi"] for example in examples["translation"]]
+    inputs = [prefix + example[src_lang] for example in examples["translation"]]
+    targets = [example[tgt_lang] for example in examples["translation"]]
     model_inputs = tokenizer(inputs, text_target=targets, max_length=max_length, truncation=True)
     return model_inputs
 
@@ -69,12 +68,14 @@ from transformers import AutoConfig
 
 
 if args.finetune:
-    model = AutoModelForSeq2SeqLM.from_pretrained("vinai/vinai-translate-en2vi", # Change to checkpoint if resume from checkpoint
+    # CHANGE HERE
+    model = AutoModelForSeq2SeqLM.from_pretrained("vinai/vinai-translate-en2vi", # Change to checkpoint if resume from checkpoint # CHANGE HERE
                                                 decoder_start_token_id=tokenizer.lang_code_to_id["vi_VN"]
     )
 
 else:
 # If train new model from scratch
+    # CHANGE HERE
     config = AutoConfig.from_pretrained("vinai/vinai-translate-en2vi", 
                                         decoder_start_token_id=tokenizer.lang_code_to_id["vi_VN"])
     model = AutoModelForSeq2SeqLM.from_config(config)
@@ -122,7 +123,7 @@ from transformers import Seq2SeqTrainingArguments, Seq2SeqTrainer
 
 
 training_args = Seq2SeqTrainingArguments(
-    output_dir="./result_vinai_test",
+    output_dir="./result_vinai_en2vi_test",  # CHANGE HERE
     evaluation_strategy="steps",
     eval_steps=100,
     learning_rate=2e-5,
@@ -181,31 +182,6 @@ predictions = tokenizer.batch_decode(
 )
 predictions = [pred.strip() for pred in predictions]
 print(predictions)
-print([ex['vi'] for ex in test_dataset["translation"]])
-print([ex['en'] for ex in test_dataset["translation"]])
+print([ex[src_lang] for ex in test_dataset["translation"]])
+print([ex[tgt_lang] for ex in test_dataset["translation"]])
 exit(0)
-
-
-metrics = predict_results.metrics
-max_predict_samples = (
-    data_args.max_predict_samples if data_args.max_predict_samples is not None else len(predict_dataset)
-)
-metrics["predict_samples"] = min(max_predict_samples, len(predict_dataset))
-
-trainer.log_metrics("predict", metrics)
-trainer.save_metrics("predict", metrics)
-
-if trainer.is_world_process_zero():
-    if training_args.predict_with_generate:
-        predictions = predict_results.predictions
-        predictions = np.where(predictions != -100, predictions, tokenizer.pad_token_id)
-        predictions = tokenizer.batch_decode(
-            predictions, skip_special_tokens=True, clean_up_tokenization_spaces=True
-        )
-        predictions = [pred.strip() for pred in predictions]
-        output_prediction_file = os.path.join(training_args.output_dir, "generated_predictions.txt")
-        with open(output_prediction_file, "w", encoding="utf-8") as writer:
-            writer.write("\n".join(predictions))
-
-
-
