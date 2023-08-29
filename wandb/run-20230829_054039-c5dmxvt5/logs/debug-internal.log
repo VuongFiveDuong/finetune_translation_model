@@ -1,0 +1,533 @@
+2023-08-29 05:40:39,165 INFO    StreamThr :2692 [internal.py:wandb_internal():86] W&B internal server running at pid: 2692, started at: 2023-08-29 05:40:39.150574
+2023-08-29 05:40:39,168 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status
+2023-08-29 05:40:39,176 INFO    WriterThread:2692 [datastore.py:open_for_write():85] open: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/run-c5dmxvt5.wandb
+2023-08-29 05:40:39,184 DEBUG   SenderThread:2692 [sender.py:send():379] send: header
+2023-08-29 05:40:39,185 DEBUG   SenderThread:2692 [sender.py:send():379] send: run
+2023-08-29 05:40:39,916 INFO    SenderThread:2692 [dir_watcher.py:__init__():211] watching files in: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files
+2023-08-29 05:40:39,916 INFO    SenderThread:2692 [sender.py:_start_run_threads():1121] run started: c5dmxvt5 with start time 1693287639.147993
+2023-08-29 05:40:39,917 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: summary_record
+2023-08-29 05:40:39,928 INFO    SenderThread:2692 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-08-29 05:40:39,948 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: check_version
+2023-08-29 05:40:39,948 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: check_version
+2023-08-29 05:40:40,175 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: run_start
+2023-08-29 05:40:40,185 DEBUG   HandlerThread:2692 [system_info.py:__init__():31] System info init
+2023-08-29 05:40:40,186 DEBUG   HandlerThread:2692 [system_info.py:__init__():46] System info init done
+2023-08-29 05:40:40,186 INFO    HandlerThread:2692 [system_monitor.py:start():181] Starting system monitor
+2023-08-29 05:40:40,186 INFO    SystemMonitor:2692 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-08-29 05:40:40,186 INFO    HandlerThread:2692 [system_monitor.py:probe():201] Collecting system info
+2023-08-29 05:40:40,189 INFO    SystemMonitor:2692 [interfaces.py:start():190] Started cpu monitoring
+2023-08-29 05:40:40,190 INFO    SystemMonitor:2692 [interfaces.py:start():190] Started disk monitoring
+2023-08-29 05:40:40,191 INFO    SystemMonitor:2692 [interfaces.py:start():190] Started gpu monitoring
+2023-08-29 05:40:40,192 INFO    SystemMonitor:2692 [interfaces.py:start():190] Started memory monitoring
+2023-08-29 05:40:40,193 INFO    SystemMonitor:2692 [interfaces.py:start():190] Started network monitoring
+2023-08-29 05:40:40,194 DEBUG   HandlerThread:2692 [system_info.py:probe():195] Probing system
+2023-08-29 05:40:40,214 DEBUG   HandlerThread:2692 [gitlib.py:_init_repo():53] git repository is invalid
+2023-08-29 05:40:40,214 DEBUG   HandlerThread:2692 [system_info.py:probe():240] Probing system done
+2023-08-29 05:40:40,215 DEBUG   HandlerThread:2692 [system_monitor.py:probe():210] {'os': 'Linux-5.15.109+-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2023-08-29T05:40:40.194860', 'startedAt': '2023-08-29T05:40:39.096546', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/finetuning_vinai.py', 'codePath': 'finetuning_vinai.py', 'host': 'bed62ce1ae7c', 'username': 'root', 'executable': '/usr/bin/python3', 'cpu_count': 1, 'cpu_count_logical': 2, 'cpu_freq': {'current': 2199.998, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2199.998, 'min': 0.0, 'max': 0.0}, {'current': 2199.998, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 78.1898422241211, 'used': 26.57529067993164}, 'gpu': 'Tesla T4', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla T4', 'memory_total': 16106127360}], 'memory': {'total': 12.678386688232422}}
+2023-08-29 05:40:40,215 INFO    HandlerThread:2692 [system_monitor.py:probe():211] Finished collecting system info
+2023-08-29 05:40:40,216 INFO    HandlerThread:2692 [system_monitor.py:probe():214] Publishing system info
+2023-08-29 05:40:40,217 DEBUG   HandlerThread:2692 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-08-29 05:40:40,225 DEBUG   HandlerThread:2692 [system_info.py:_save_pip():67] Saving pip packages done
+2023-08-29 05:40:40,252 INFO    HandlerThread:2692 [system_monitor.py:probe():216] Finished publishing system info
+2023-08-29 05:40:40,260 DEBUG   SenderThread:2692 [sender.py:send():379] send: files
+2023-08-29 05:40:40,260 INFO    SenderThread:2692 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-08-29 05:40:40,278 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:40:40,279 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:40:40,778 DEBUG   SenderThread:2692 [sender.py:send():379] send: telemetry
+2023-08-29 05:40:40,779 DEBUG   SenderThread:2692 [sender.py:send():379] send: config
+2023-08-29 05:40:40,781 DEBUG   SenderThread:2692 [sender.py:send():379] send: metric
+2023-08-29 05:40:40,784 DEBUG   SenderThread:2692 [sender.py:send():379] send: telemetry
+2023-08-29 05:40:40,786 DEBUG   SenderThread:2692 [sender.py:send():379] send: metric
+2023-08-29 05:40:40,788 WARNING SenderThread:2692 [sender.py:send_metric():1326] Seen metric with glob (shouldn't happen)
+2023-08-29 05:40:40,924 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_created():271] file/dir created: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/wandb-metadata.json
+2023-08-29 05:40:40,924 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_created():271] file/dir created: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/wandb-summary.json
+2023-08-29 05:40:40,925 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_created():271] file/dir created: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:40:40,926 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_created():271] file/dir created: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/requirements.txt
+2023-08-29 05:40:41,283 INFO    wandb-upload_0:2692 [upload_job.py:push():131] Uploaded file /tmp/tmpdq3yt157wandb/ql682gou-wandb-metadata.json
+2023-08-29 05:40:44,374 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:40:44,932 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:40:46,936 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:40:48,941 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:40:49,644 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:40:50,950 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:40:52,957 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:40:54,868 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:40:54,965 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:40:55,277 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:40:55,278 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:40:56,977 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:40:58,982 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:40:59,956 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:41:00,986 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:41:02,990 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:41:04,994 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:41:05,197 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:41:06,999 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:41:09,004 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:41:10,277 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:41:10,278 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:41:10,620 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:41:11,014 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:41:13,020 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:41:13,020 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/config.yaml
+2023-08-29 05:41:15,025 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:41:17,029 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:41:17,525 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:41:19,033 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:41:22,894 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:41:25,277 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:41:25,278 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:41:28,576 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:41:29,058 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:41:33,599 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:41:37,077 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:41:38,899 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:41:40,193 DEBUG   SystemMonitor:2692 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-08-29 05:41:40,195 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:41:40,277 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:41:40,278 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:41:44,451 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:41:45,098 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:41:49,451 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:41:51,113 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:41:54,602 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:41:55,277 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:41:55,278 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:42:00,552 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:42:05,553 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:42:10,195 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:42:10,277 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:42:10,278 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:42:10,606 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:42:15,608 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:42:20,608 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:42:25,278 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:42:25,278 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:42:25,614 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:42:30,615 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:42:33,219 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:42:36,174 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:42:40,196 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:42:40,278 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:42:40,278 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:42:41,506 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:42:46,506 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:42:51,507 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:42:55,278 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:42:55,279 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:42:56,530 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:43:01,531 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:43:06,532 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:43:10,197 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:43:10,278 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:43:10,278 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:43:11,560 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:43:16,561 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:43:21,337 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:43:22,330 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:43:25,278 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:43:25,279 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:43:27,351 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:43:27,817 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:43:32,818 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:43:37,819 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:43:40,198 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:43:40,278 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:43:40,290 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:43:43,558 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:43:48,559 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:43:53,559 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:43:55,278 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:43:55,279 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:43:58,571 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:44:03,572 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:44:08,573 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:44:10,198 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:44:10,279 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:44:10,279 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:44:13,592 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:44:15,469 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:44:18,876 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:44:23,876 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:44:25,279 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:44:25,279 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:44:29,541 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:44:34,542 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:44:39,543 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:44:40,199 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:44:40,279 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:44:40,279 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:44:45,523 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:44:50,523 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:44:55,279 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:44:55,280 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:44:55,581 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:45:00,582 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:45:03,585 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:45:05,682 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:45:09,599 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:45:10,200 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:45:10,279 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:45:10,281 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:45:11,544 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:45:16,545 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:45:21,546 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:45:23,637 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:45:25,279 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:45:25,280 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:45:27,154 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:45:29,652 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:45:32,159 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:45:37,160 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:45:40,201 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:45:40,279 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:45:40,281 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:45:42,520 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:45:47,521 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:45:52,521 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:45:55,279 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:45:55,280 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:45:57,566 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:46:02,566 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:46:07,567 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:46:10,204 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:46:10,279 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:46:10,280 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:46:12,597 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:46:15,781 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:46:17,700 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:46:22,701 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:46:25,280 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:46:25,281 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:46:28,580 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:46:33,581 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:46:38,582 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:46:40,202 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:46:40,280 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:46:40,280 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:46:44,513 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:46:49,522 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:46:54,523 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:46:55,280 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:46:55,281 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:46:59,577 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:47:03,913 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:47:05,538 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:47:10,203 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:47:10,280 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:47:10,281 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:47:10,572 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:47:15,573 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:47:20,579 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:47:25,280 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:47:25,281 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:47:25,614 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:47:30,615 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:47:35,616 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:47:40,204 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:47:40,280 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:47:40,281 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:47:41,562 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:47:46,563 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:47:52,027 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:47:52,295 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:47:55,280 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:47:55,281 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:47:57,582 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:48:02,583 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:48:07,583 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:48:10,205 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:48:10,280 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:48:10,281 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:48:13,547 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:48:18,548 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:48:23,549 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:48:25,281 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:48:25,281 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:48:28,642 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:48:33,646 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:48:38,648 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:48:40,205 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:48:40,281 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:48:40,285 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:48:44,204 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:48:44,614 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:48:49,615 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:48:54,616 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:48:55,281 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:48:55,283 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:48:58,246 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:48:59,904 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:49:04,916 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:49:10,206 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:49:10,214 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:49:10,275 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:49:10,281 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:49:10,282 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:49:14,286 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:49:15,746 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:49:20,747 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:49:25,282 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:49:25,283 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:49:26,594 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:49:31,595 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:49:36,596 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:49:40,207 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:49:40,282 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:49:40,282 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:49:42,531 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:49:47,538 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:49:52,539 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:49:55,282 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:49:55,282 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:49:57,548 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:50:02,416 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:50:03,050 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:50:08,051 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:50:10,209 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:50:10,289 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:50:10,290 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:50:13,535 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:50:18,535 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:50:23,536 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:50:25,289 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:50:25,290 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:50:28,583 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:50:33,584 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:50:38,585 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:50:40,208 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:50:40,289 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:50:40,290 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:50:43,633 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:50:48,634 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:50:53,635 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:50:55,289 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:50:55,290 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:50:55,554 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:50:58,915 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:50:59,563 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:03,919 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:51:05,586 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:09,293 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:51:10,209 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:51:10,290 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:51:10,290 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:51:13,607 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:14,566 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:51:19,566 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:51:24,567 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:51:25,290 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:51:25,291 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:51:30,540 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:51:34,568 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: partial_history
+2023-08-29 05:51:34,571 DEBUG   SenderThread:2692 [sender.py:send():379] send: metric
+2023-08-29 05:51:34,572 DEBUG   SenderThread:2692 [sender.py:send():379] send: metric
+2023-08-29 05:51:34,572 DEBUG   SenderThread:2692 [sender.py:send():379] send: metric
+2023-08-29 05:51:34,572 DEBUG   SenderThread:2692 [sender.py:send():379] send: metric
+2023-08-29 05:51:34,573 DEBUG   SenderThread:2692 [sender.py:send():379] send: metric
+2023-08-29 05:51:34,573 DEBUG   SenderThread:2692 [sender.py:send():379] send: metric
+2023-08-29 05:51:34,573 DEBUG   SenderThread:2692 [sender.py:send():379] send: metric
+2023-08-29 05:51:34,574 DEBUG   SenderThread:2692 [sender.py:send():379] send: history
+2023-08-29 05:51:34,574 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: summary_record
+2023-08-29 05:51:34,582 INFO    SenderThread:2692 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-08-29 05:51:34,657 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/wandb-summary.json
+2023-08-29 05:51:35,610 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:51:35,660 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:36,662 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:36,663 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/config.yaml
+2023-08-29 05:51:37,664 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:39,668 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:40,210 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:51:40,290 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:51:40,290 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:51:41,167 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:51:41,674 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:43,681 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:45,687 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:46,512 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:51:47,691 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:49,695 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:51,701 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:51,736 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:51:53,705 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:55,290 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:51:55,291 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:51:55,710 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:56,868 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:51:57,716 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:51:59,722 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:52:01,733 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:52:02,146 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:52:03,744 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:52:05,749 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:52:07,221 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:52:07,754 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:52:09,758 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:52:10,211 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:52:10,290 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:52:10,291 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:52:11,764 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:52:12,940 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:52:13,768 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:52:15,774 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:52:17,779 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:52:18,529 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:52:23,530 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:52:25,290 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:52:25,291 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:52:28,537 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:52:33,585 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:52:33,828 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:52:38,585 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:52:40,211 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:52:40,290 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:52:40,291 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:52:44,543 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:52:49,544 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:52:54,544 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:52:55,290 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: stop_status
+2023-08-29 05:52:55,291 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: stop_status
+2023-08-29 05:52:59,631 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:53:04,631 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:53:06,708 DEBUG   SenderThread:2692 [sender.py:send():379] send: exit
+2023-08-29 05:53:06,708 INFO    SenderThread:2692 [sender.py:send_exit():584] handling exit code: 255
+2023-08-29 05:53:06,708 INFO    SenderThread:2692 [sender.py:send_exit():586] handling runtime: 746
+2023-08-29 05:53:06,713 INFO    SenderThread:2692 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-08-29 05:53:06,714 INFO    SenderThread:2692 [sender.py:send_exit():592] send defer
+2023-08-29 05:53:06,714 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: defer
+2023-08-29 05:53:06,715 INFO    HandlerThread:2692 [handler.py:handle_request_defer():170] handle defer: 0
+2023-08-29 05:53:06,715 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: defer
+2023-08-29 05:53:06,715 INFO    SenderThread:2692 [sender.py:send_request_defer():608] handle sender defer: 0
+2023-08-29 05:53:06,715 INFO    SenderThread:2692 [sender.py:transition_state():612] send defer: 1
+2023-08-29 05:53:06,716 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: defer
+2023-08-29 05:53:06,716 INFO    HandlerThread:2692 [handler.py:handle_request_defer():170] handle defer: 1
+2023-08-29 05:53:06,716 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: defer
+2023-08-29 05:53:06,717 INFO    SenderThread:2692 [sender.py:send_request_defer():608] handle sender defer: 1
+2023-08-29 05:53:06,717 INFO    SenderThread:2692 [sender.py:transition_state():612] send defer: 2
+2023-08-29 05:53:06,717 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: defer
+2023-08-29 05:53:06,717 INFO    HandlerThread:2692 [handler.py:handle_request_defer():170] handle defer: 2
+2023-08-29 05:53:06,717 INFO    HandlerThread:2692 [system_monitor.py:finish():190] Stopping system monitor
+2023-08-29 05:53:06,717 DEBUG   SystemMonitor:2692 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-08-29 05:53:06,718 DEBUG   SystemMonitor:2692 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-08-29 05:53:06,718 INFO    HandlerThread:2692 [interfaces.py:finish():202] Joined cpu monitor
+2023-08-29 05:53:06,730 INFO    HandlerThread:2692 [interfaces.py:finish():202] Joined disk monitor
+2023-08-29 05:53:06,735 INFO    HandlerThread:2692 [interfaces.py:finish():202] Joined gpu monitor
+2023-08-29 05:53:06,735 INFO    HandlerThread:2692 [interfaces.py:finish():202] Joined memory monitor
+2023-08-29 05:53:06,736 INFO    HandlerThread:2692 [interfaces.py:finish():202] Joined network monitor
+2023-08-29 05:53:06,736 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: defer
+2023-08-29 05:53:06,736 INFO    SenderThread:2692 [sender.py:send_request_defer():608] handle sender defer: 2
+2023-08-29 05:53:06,737 INFO    SenderThread:2692 [sender.py:transition_state():612] send defer: 3
+2023-08-29 05:53:06,737 DEBUG   SenderThread:2692 [sender.py:send():379] send: stats
+2023-08-29 05:53:06,737 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: defer
+2023-08-29 05:53:06,737 INFO    HandlerThread:2692 [handler.py:handle_request_defer():170] handle defer: 3
+2023-08-29 05:53:06,738 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: defer
+2023-08-29 05:53:06,738 INFO    SenderThread:2692 [sender.py:send_request_defer():608] handle sender defer: 3
+2023-08-29 05:53:06,738 INFO    SenderThread:2692 [sender.py:transition_state():612] send defer: 4
+2023-08-29 05:53:06,738 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: defer
+2023-08-29 05:53:06,739 INFO    HandlerThread:2692 [handler.py:handle_request_defer():170] handle defer: 4
+2023-08-29 05:53:06,739 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: defer
+2023-08-29 05:53:06,739 INFO    SenderThread:2692 [sender.py:send_request_defer():608] handle sender defer: 4
+2023-08-29 05:53:06,739 INFO    SenderThread:2692 [sender.py:transition_state():612] send defer: 5
+2023-08-29 05:53:06,740 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: defer
+2023-08-29 05:53:06,740 INFO    HandlerThread:2692 [handler.py:handle_request_defer():170] handle defer: 5
+2023-08-29 05:53:06,740 DEBUG   SenderThread:2692 [sender.py:send():379] send: summary
+2023-08-29 05:53:06,744 INFO    SenderThread:2692 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-08-29 05:53:06,745 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: defer
+2023-08-29 05:53:06,745 INFO    SenderThread:2692 [sender.py:send_request_defer():608] handle sender defer: 5
+2023-08-29 05:53:06,746 INFO    SenderThread:2692 [sender.py:transition_state():612] send defer: 6
+2023-08-29 05:53:06,746 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: defer
+2023-08-29 05:53:06,746 INFO    HandlerThread:2692 [handler.py:handle_request_defer():170] handle defer: 6
+2023-08-29 05:53:06,746 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: defer
+2023-08-29 05:53:06,747 INFO    SenderThread:2692 [sender.py:send_request_defer():608] handle sender defer: 6
+2023-08-29 05:53:06,747 INFO    SenderThread:2692 [sender.py:transition_state():612] send defer: 7
+2023-08-29 05:53:06,747 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: status_report
+2023-08-29 05:53:06,747 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: defer
+2023-08-29 05:53:06,748 INFO    HandlerThread:2692 [handler.py:handle_request_defer():170] handle defer: 7
+2023-08-29 05:53:06,748 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: defer
+2023-08-29 05:53:06,748 INFO    SenderThread:2692 [sender.py:send_request_defer():608] handle sender defer: 7
+2023-08-29 05:53:06,962 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/wandb-summary.json
+2023-08-29 05:53:07,708 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: poll_exit
+2023-08-29 05:53:07,965 INFO    Thread-12 :2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:53:08,700 INFO    SenderThread:2692 [sender.py:transition_state():612] send defer: 8
+2023-08-29 05:53:08,700 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: poll_exit
+2023-08-29 05:53:08,700 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: defer
+2023-08-29 05:53:08,701 INFO    HandlerThread:2692 [handler.py:handle_request_defer():170] handle defer: 8
+2023-08-29 05:53:08,701 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: defer
+2023-08-29 05:53:08,702 INFO    SenderThread:2692 [sender.py:send_request_defer():608] handle sender defer: 8
+2023-08-29 05:53:08,702 INFO    SenderThread:2692 [job_builder.py:build():281] Attempting to build job artifact
+2023-08-29 05:53:08,706 INFO    SenderThread:2692 [job_builder.py:_get_source_type():411] no source found
+2023-08-29 05:53:08,706 INFO    SenderThread:2692 [sender.py:transition_state():612] send defer: 9
+2023-08-29 05:53:08,706 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: defer
+2023-08-29 05:53:08,706 INFO    HandlerThread:2692 [handler.py:handle_request_defer():170] handle defer: 9
+2023-08-29 05:53:08,707 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: defer
+2023-08-29 05:53:08,707 INFO    SenderThread:2692 [sender.py:send_request_defer():608] handle sender defer: 9
+2023-08-29 05:53:08,707 INFO    SenderThread:2692 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-08-29 05:53:08,709 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: poll_exit
+2023-08-29 05:53:08,970 INFO    SenderThread:2692 [dir_watcher.py:_on_file_modified():288] file/dir modified: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:53:08,970 INFO    SenderThread:2692 [dir_watcher.py:finish():388] scan: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files
+2023-08-29 05:53:08,971 INFO    SenderThread:2692 [dir_watcher.py:finish():402] scan save: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/config.yaml config.yaml
+2023-08-29 05:53:08,972 INFO    SenderThread:2692 [dir_watcher.py:finish():402] scan save: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/wandb-summary.json wandb-summary.json
+2023-08-29 05:53:08,976 INFO    SenderThread:2692 [dir_watcher.py:finish():402] scan save: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/requirements.txt requirements.txt
+2023-08-29 05:53:08,981 INFO    SenderThread:2692 [dir_watcher.py:finish():402] scan save: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/wandb-metadata.json wandb-metadata.json
+2023-08-29 05:53:08,981 INFO    SenderThread:2692 [dir_watcher.py:finish():402] scan save: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log output.log
+2023-08-29 05:53:08,984 INFO    SenderThread:2692 [sender.py:transition_state():612] send defer: 10
+2023-08-29 05:53:08,985 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: poll_exit
+2023-08-29 05:53:08,985 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: defer
+2023-08-29 05:53:08,985 INFO    HandlerThread:2692 [handler.py:handle_request_defer():170] handle defer: 10
+2023-08-29 05:53:08,986 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: defer
+2023-08-29 05:53:08,993 INFO    SenderThread:2692 [sender.py:send_request_defer():608] handle sender defer: 10
+2023-08-29 05:53:08,993 INFO    SenderThread:2692 [file_pusher.py:finish():159] shutting down file pusher
+2023-08-29 05:53:09,710 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: poll_exit
+2023-08-29 05:53:09,713 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: poll_exit
+2023-08-29 05:53:09,896 INFO    wandb-upload_0:2692 [upload_job.py:push():131] Uploaded file /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/config.yaml
+2023-08-29 05:53:10,149 INFO    wandb-upload_3:2692 [upload_job.py:push():131] Uploaded file /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/output.log
+2023-08-29 05:53:10,150 INFO    wandb-upload_2:2692 [upload_job.py:push():131] Uploaded file /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/requirements.txt
+2023-08-29 05:53:10,714 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: poll_exit
+2023-08-29 05:53:10,715 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: poll_exit
+2023-08-29 05:53:10,973 INFO    wandb-upload_1:2692 [upload_job.py:push():131] Uploaded file /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/files/wandb-summary.json
+2023-08-29 05:53:11,175 INFO    Thread-11 (_thread_body):2692 [sender.py:transition_state():612] send defer: 11
+2023-08-29 05:53:11,176 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: defer
+2023-08-29 05:53:11,176 INFO    HandlerThread:2692 [handler.py:handle_request_defer():170] handle defer: 11
+2023-08-29 05:53:11,177 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: defer
+2023-08-29 05:53:11,177 INFO    SenderThread:2692 [sender.py:send_request_defer():608] handle sender defer: 11
+2023-08-29 05:53:11,177 INFO    SenderThread:2692 [file_pusher.py:join():164] waiting for file pusher
+2023-08-29 05:53:11,177 INFO    SenderThread:2692 [sender.py:transition_state():612] send defer: 12
+2023-08-29 05:53:11,178 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: defer
+2023-08-29 05:53:11,178 INFO    HandlerThread:2692 [handler.py:handle_request_defer():170] handle defer: 12
+2023-08-29 05:53:11,178 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: defer
+2023-08-29 05:53:11,178 INFO    SenderThread:2692 [sender.py:send_request_defer():608] handle sender defer: 12
+2023-08-29 05:53:11,178 INFO    SenderThread:2692 [file_stream.py:finish():593] file stream finish called
+2023-08-29 05:53:11,715 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: poll_exit
+2023-08-29 05:53:11,874 INFO    SenderThread:2692 [file_stream.py:finish():597] file stream finish is done
+2023-08-29 05:53:11,874 INFO    SenderThread:2692 [sender.py:transition_state():612] send defer: 13
+2023-08-29 05:53:11,875 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: poll_exit
+2023-08-29 05:53:11,875 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: defer
+2023-08-29 05:53:11,875 INFO    HandlerThread:2692 [handler.py:handle_request_defer():170] handle defer: 13
+2023-08-29 05:53:11,876 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: defer
+2023-08-29 05:53:11,876 INFO    SenderThread:2692 [sender.py:send_request_defer():608] handle sender defer: 13
+2023-08-29 05:53:11,876 INFO    SenderThread:2692 [sender.py:transition_state():612] send defer: 14
+2023-08-29 05:53:11,877 DEBUG   SenderThread:2692 [sender.py:send():379] send: final
+2023-08-29 05:53:11,877 DEBUG   SenderThread:2692 [sender.py:send():379] send: footer
+2023-08-29 05:53:11,877 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: defer
+2023-08-29 05:53:11,877 INFO    HandlerThread:2692 [handler.py:handle_request_defer():170] handle defer: 14
+2023-08-29 05:53:11,877 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: defer
+2023-08-29 05:53:11,878 INFO    SenderThread:2692 [sender.py:send_request_defer():608] handle sender defer: 14
+2023-08-29 05:53:11,878 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: poll_exit
+2023-08-29 05:53:11,879 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: poll_exit
+2023-08-29 05:53:11,879 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: server_info
+2023-08-29 05:53:11,879 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: get_summary
+2023-08-29 05:53:11,880 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: sampled_history
+2023-08-29 05:53:11,881 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: job_info
+2023-08-29 05:53:11,879 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: poll_exit
+2023-08-29 05:53:11,881 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: poll_exit
+2023-08-29 05:53:11,882 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: server_info
+2023-08-29 05:53:12,108 DEBUG   SenderThread:2692 [sender.py:send_request():406] send_request: job_info
+2023-08-29 05:53:12,109 INFO    MainThread:2692 [wandb_run.py:_footer_history_summary_info():3481] rendering history
+2023-08-29 05:53:12,110 INFO    MainThread:2692 [wandb_run.py:_footer_history_summary_info():3513] rendering summary
+2023-08-29 05:53:12,110 INFO    MainThread:2692 [wandb_run.py:_footer_sync_info():3440] logging synced files
+2023-08-29 05:53:12,111 DEBUG   HandlerThread:2692 [handler.py:handle_request():144] handle_request: shutdown
+2023-08-29 05:53:12,111 INFO    HandlerThread:2692 [handler.py:finish():861] shutting down handler
+2023-08-29 05:53:12,881 INFO    WriterThread:2692 [datastore.py:close():294] close: /content/gdrive/MyDrive/VinUni/Finetune-translation-model/finetune-translation-model/wandb/run-20230829_054039-c5dmxvt5/run-c5dmxvt5.wandb
+2023-08-29 05:53:13,109 INFO    SenderThread:2692 [sender.py:finish():1552] shutting down sender
+2023-08-29 05:53:13,110 INFO    SenderThread:2692 [file_pusher.py:finish():159] shutting down file pusher
+2023-08-29 05:53:13,110 INFO    SenderThread:2692 [file_pusher.py:join():164] waiting for file pusher

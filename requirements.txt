@@ -1,0 +1,11 @@
+transformers[torch]
+sentencepiece
+tokenizers
+datasets
+sacrebleu
+evaluate
+pandas
+protobuf
+tensorflow
+tensorboard
+wandb
