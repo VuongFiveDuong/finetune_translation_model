@@ -5,6 +5,15 @@ from datasets import DatasetDict, Dataset, load_dataset
 import torch
 import logging
 import sys
+import argparse
+ 
+parser = argparse.ArgumentParser(description="What to do with this file?",
+                                 formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+parser.add_argument("-f", "--finetune", default=True,
+                    help="Finetune or train from scratch")
+args = parser.parse_args()
+
+
 
 
 # Setup logging
@@ -56,18 +65,19 @@ test_dataset = test_dataset.map(
 
 
 # # MODEL PREPARATION 
+from transformers import AutoConfig
 
-model = AutoModelForSeq2SeqLM.from_pretrained("vinai/vinai-translate-en2vi", # Change to checkpoint if resume from checkpoint
-                                              decoder_start_token_id=tokenizer.lang_code_to_id["vi_VN"]
-)
 
+if args.finetune:
+    model = AutoModelForSeq2SeqLM.from_pretrained("vinai/vinai-translate-en2vi", # Change to checkpoint if resume from checkpoint
+                                                decoder_start_token_id=tokenizer.lang_code_to_id["vi_VN"]
+    )
+
+else:
 # If train new model from scratch
-# from transformers import AutoConfig
-
-
-# config = AutoConfig.from_pretrained("vinai/vinai-translate-en2vi", 
-#                                     decoder_start_token_id=tokenizer.lang_code_to_id["vi_VN"])
-# model = AutoModelForSeq2SeqLM.from_config(config)
+    config = AutoConfig.from_pretrained("vinai/vinai-translate-en2vi", 
+                                        decoder_start_token_id=tokenizer.lang_code_to_id["vi_VN"])
+    model = AutoModelForSeq2SeqLM.from_config(config)
 
 
 
